@@ -1,0 +1,20 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2015-01-01/dtlArtifacts.json",
+    "title": "ChangePCName",
+    "description": "Change the Pc Name",
+    "tags": [
+        "Rename"
+    ],
+    "iconUri": "https://chocolatey.org/content/packageimages/Posh-GitHub.0.0.2.png",
+    "targetOsType": "Windows",
+    "parameters": {
+	"FeatureName": {
+            "type": "string",
+            "displayName": "PCName",
+            "description": "New Name of the PC"
+	}
+	},
+    "runCommand": {
+		"commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass -File ChangePCName.ps1 ', parameters('PCName'))]"
+    }
+}
