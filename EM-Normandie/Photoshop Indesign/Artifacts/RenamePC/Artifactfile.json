@@ -8,7 +8,7 @@
     "iconUri": "https://chocolatey.org/content/packageimages/Posh-GitHub.0.0.2.png",
     "targetOsType": "Windows",
     "parameters": {
-	"FeatureName": {
+	"PCName": {
             "type": "string",
             "displayName": "PCName",
             "description": "New Name of the PC"
